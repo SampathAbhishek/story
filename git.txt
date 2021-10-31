@@ -1,0 +1,77 @@
+Git version control and local setup:-
+
+step 1:-
+git init (initialise git repository in the working directory).
+to check use ls -a(since it is hidden).
+step 2:-
+git add index.html(select the file).
+(This will add the file into staging area and ready to be commited from which we can pick up files and identify changes)
+
+git config --global user.email "as6587@srmist.edu.in"
+git config --global user.name "Sampath Abhishek"
+
+working directory ---->Staging area ---------->Local Repository.
+
+why is there a staging area because sometimes u might want to revert back to last save point ,for that purpose.
+
+suppose u wrote skdskanflasnflsng in bymistake in and saved chapter2.txt
+then use
+git checkout
+to reach back previous savepont i.e commit point. and it will overwrite chapter2.txt back to that.
+
+step 3:-(saving the file -->means making a commit)
+git commit -m "create index.html"(the messg is called commit mssg.)
+step - 4:-(sharing files:-)
+Git uses something called a remote (or remote repository) to 
+store shared files.
+Developers share files by uploading to and downloading from 
+remotes. 
+a)Adding remote:-
+ git  remote  add origin https://prog-8.com/mysite.git 
+b)uploading file to remote.
+git push origin master      git push -u origin master.
+c) downloading that file of ours from remote.
+git pull origin master
+
+so summary:-
+       ->  add---->
+    pull        commit
+      |            |
+   <----- push <---
+
+mastering the git:-
+1.git status
+
+suppose if you have changed your code in index.html ,then to check the modified changes the above
+command hepls.all files modified would be displayed in red.
+
+git status can also be used check added files(green) and modified but not added files(red)
+
+2.git diff
+-->this will show u where exactly u modified ur code.
+There is more. Modified code will be displayed, as shown on the right, with the code after in green and the code before in red.
+
+3.git log
+all committed messages are displayed by this command.
+
+With git log, can I see both the commit messages and the changes that were made?
+
+To see the changes, you can use 
+4.git log -p.
+With the up and down arrow keys, you can scroll through the changes. 
+And to quit just press the Q(shift + q) key.
+
+
+
+so local repository is called .git
+and remote is called github.
+
+
+gitignore --->very imp
+
+Sometimes we might host some files which are confidential but if this which is committed we don't want to get pushed as it might
+leak our information so gitignore will help in ignoring it.
+
+.DIS_store -->these are the file that contains file settings on how should the icons look like etc.
+
+git rm --cached -r -->will removes all files from staging area -->very imp.

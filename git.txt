@@ -75,3 +75,10 @@ leak our information so gitignore will help in ignoring it.
 .DIS_store -->these are the file that contains file settings on how should the icons look like etc.
 
 git rm --cached -r -->will removes all files from staging area -->very imp.
+
+
+git clone(A process to pull down all the commits and files from remote repository to our current working directory)
+git clone url(go to github choose ur file to download and copy link from there and paste)
+now when u execute this command the repository gets added in ur working directory as an existing folder.
+
+

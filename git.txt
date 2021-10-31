@@ -7,6 +7,7 @@ step 2:-
 git add index.html(select the file).
 (This will add the file into staging area and ready to be commited from which we can pick up files and identify changes)
 
+git add . -->adds all files. 
 git config --global user.email "as6587@srmist.edu.in"
 git config --global user.name "Sampath Abhishek"
 

@@ -7,6 +7,7 @@ step 2:-
 git add index.html(select the file).
 (This will add the file into staging area and ready to be commited from which we can pick up files and identify changes)
 
+git add . -->adds all files. 
 git config --global user.email "as6587@srmist.edu.in"
 git config --global user.name "Sampath Abhishek"
 
@@ -80,5 +81,30 @@ git rm --cached -r -->will removes all files from staging area -->very imp.
 git clone(A process to pull down all the commits and files from remote repository to our current working directory)
 git clone url(go to github choose ur file to download and copy link from there and paste)
 now when u execute this command the repository gets added in ur working directory as an existing folder.
+
+
+git branching and merging
+
+
+suppose we committed 2 times so that means we are in version2 all these changes we push to our main branch i.e master.
+But what if we want to experiment on the data then we create an alternate timeline i.e. sample branch an then keep on commiting to this new branch
+if in future we find it useful we will merge this.This is known as branching and merging.This way we can simultaneously work with experimental and man at same time.
+very useful for testing and deployement side people,if u think deeply once as a developer.
+
+To create a branch:- git branch alien-plot
+
+To see all branches:- git branch
+in o/p *master -->this is the main one where we want our final 
+changes to be comitted.
+alien-plot-->This is the one which is said experimental as
+said above.
+
+But how to switch to alien-plot branch from master
+command:- git checkout alien-plot.
+
+ 
+
+
+
 
 

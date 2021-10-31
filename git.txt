@@ -102,6 +102,8 @@ said above.
 But how to switch to alien-plot branch from master
 command:- git checkout alien-plot.
 
+To merge git merge alien-plot
+
  
 
 

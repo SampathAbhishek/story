@@ -104,6 +104,15 @@ command:- git checkout alien-plot.
 
 To merge git merge alien-plot
 
+
+fork and pull:-
+
+Imagine you want to take a copy of some reposiory and make it urs.Thats where fork comes in.It will help you to make a copy.
+This is different from that of the clone as in clone u are downloading it nd keeping in ur local direc.But,still the owner is not u.In fork u are the owner.
+So after forking u can clone this and start building ,if any point of time u make it /upgrade it better than the original u can send a pull request to the owner
+about this ,if he like's this upadte he will accept this pull request and merge it with his main branch.
+This is the concept of fork nd pull.
+
  
 
 
